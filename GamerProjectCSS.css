@@ -104,7 +104,7 @@ body.home .heroes-section {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    -ms-flex-line-pack: strecth;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
 }
 
