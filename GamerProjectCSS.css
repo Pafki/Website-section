@@ -1,8 +1,109 @@
 body.home .heroes-section {
     text-align: center;
-    background-image: url(img/scene/candy-895e91cbc198218dbe56fed67b590a7c37a8bc3ef29d4b8c2989edf2196cfdb4b6150e64cb6f57a01a26268ae764b4cc22da52168121287e68aa8a9891efd616.jpg);
+    background-image: url('img/scene/candy-895e91cbc198218dbe56fed67b590a7c37a8bc3ef29d4b8c2989edf2196cfdb4b6150e64cb6f57a01a26268ae764b4cc22da52168121287e68aa8a9891efd616.jpg');
     background-position: top;
     background-size: cover;
+}
+
+body {
+    color: #405275;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #f0edf2;
+    max-width: 100%;
+    overflow-x: hidden;
+    font: normal normal normal 10px Arial,sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+    background-repeat: no-repeat;
+    vertical-align: inherit;
+    white-space: inherit;
+    text-overflow: inherit;
+    text-shadow: inherit;
+}
+
+.h3, .progress-2>.bar-container>.bar-text>.title, h3 {
+    line-height: normal;
+    letter-spacing: 0.1px;
+    font-family: "Big Noodle Too", impact, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+[class*=flex-container].m-center-items {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*TOP SPOTLIGHT SECTION*/
+.spotlight {
+    position: relative;
+}
+
+.spotlight-image {
+    position: relative;
+    /*left: -270px;*/
+    display: inline-block;
+    min-width: 746px;
+    min-height: 440px;
+    margin: 0 auto;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    z-index: 0;
+}
+
+.spotlight-banner {
+    width: 100%;
+    min-height: 200px;
+    position: absolute;
+    padding: 10px 0 15px;
+    top: calc(50% - 100px);
+    text-align: right;
+    background-image: -webkit-linear-gradient(left, rgba(42, 55, 81, 0), rgba(42, 55, 81, .8) 25%, rgba(42, 55, 81, .8) 75%, rgba(42, 55, 81, 0));
+    background-image: linear-gradient(90deg, rgba(42, 55, 81, 0) 0, rgba(42, 55, 81, .8) 25%, rgba(42, 55, 81, .8) 75%, rgba(42, 55, 81, 0));
+    background-position: 50%;
+    background-size: 1920px auto;
+    z-index: 0;
+}
+
+.u-max-width-container {
+    width: calc(100% + 10px);
+    max-width: 1250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-box {
@@ -237,7 +338,7 @@ body.home .hero-portrait-group {
 }
 
 #selectHeroes {
-    background: url(img/bg-tmp-hero-mobile-0e22f0d6d0433ad18a7158c029b33abefe6bf0046188e2660dc4…aeae276793e28dd4146c7dd1fc1956e1da9ba2fda23d73e4030713f33967dc004b813a.jpg);
+    background: url('https://overwatch-a.akamaihd.net/img/pages/buy/buy-bar-bg-b848f091bff6072bda7671311ce459727decd0281e85902958bc8d6b0b4d342875ad58385fa809928fd9b6bff0f7945217aed6e32581b6718a12fb99ab240f1c.jpg');
     background-size: cover;
     background-position: bottom;
 }
@@ -257,1776 +358,111 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-overflow: inherit;
     text-shadow: inherit;
 }
-user agent stylesheet
+
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
 }
-Inherited from body.hero-detail-page.en-us
-@media only screen and (min-width: 400px)
-body {
-    font-size: 1.6rem;
-    line-height: 1.5;
+
+/*MENU*/
+.hero-select-navigation .hero-type-container {
+    display: inline-table;
 }
-body {
-    color: #405275;
+
+ul {
+    list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: #f0edf2;
-    max-width: 100%;
-    overflow-x: hidden;
-    font: normal normal normal 10px Arial,sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
 }
-*, :after, :before {
-    box-sizing: inherit;
-    background-repeat: no-repeat;
-    vertical-align: inherit;
-    white-space: inherit;
-    text-overflow: inherit;
-    text-shadow: inherit;
+
+.row:after, .row:before {
+    content: " ";
+    display: table;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
 }
-Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+
+.hero-select-navigation .hero-type-container {
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+.hero-select-navigation .hero-select-title {
+    margin-top: 3rem;
+    margin-bottom: 1.6rem;
+    font-size: 3rem;
     position: relative;
-    top: 0;
+    text-align: center;
+    width: 100%;
+    display: table;
+}
+
+.hero-select-navigation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.hero-select-navigation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.hero-select-navigation .hero-item {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.hero-portrait-label.m-color-inverted {
+    color: #f0edf2;
+}
+
+.hero-portrait-label {
+    position: relative;
+    display: inline-block;
+    top: -4.2px;
+    margin-left: -10px;
+    padding: 1px 10px;
+    font-size: 13px;
+    /*color: #333;*/
+    white-space: nowrap;
+}
+
+.hero-select-navigation .hero-select-title .heading-line {
+    display: table-cell;
+    width: 50%;
+    position: relative;
+}
+
+.hero-select-navigation .hero-select-title>.text {
+    word-break: keep-all;
+    color: #fff;
+    opacity: .6;
+    font-size:30px;
+    padding-right: 6px;
+    display: table-cell;
+}
+
+.hero-select-navigation .hero-select-title .heading-line:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
     left: 0;
     width: 100%;
-    height: 100%;
-    display: block;
-    box-sizing: border-box;
-    font-size: 10px;
-}
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-*, :after, :before {
-    box-sizing: inherit;
-    background-repeat: no-repeat;
-    vertical-align: inherit;
-    white-space: inherit;
-    text-overflow: inherit;
-    text-shadow: inherit;
-}
-Pseudo ::before element
-*, :after, :before {
-    box-sizing: inherit;
-    background-repeat: no-repeat;
-    vertical-align: inherit;
-    white-space: inherit;
-    text-overflow: inherit;
-    text-shadow: inherit;
-}
-Pseudo ::after element
-*, :after, :before {
-    box-sizing: inherit;
-    background-repeat: no-repeat;
-    vertical-align: inherit;
-    white-space: inherit;
-    text-overflow: inherit;
-    text-shadow: inherit;
+    height: 2px;
+    opacity: .2;
+    background: #fff;
 }
 
-
-column.row.row, .row.row.columns {
-    float: none;
+.u-max-width-container {
+    width: 100%;
+    max-width: 1250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
-@media only screen and (min-width: 768px)
-    .u-max-width-container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .u-max-width-container {
-        width: 100%;
-        max-width: 1250px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .hero-select-navigation {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        text-align: center;
-    }
-    .column, .columns {
-        width: 100%;
-        float: left;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .row {
-        max-width: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-        display: block;
-    }
-    *, :after, :before {
-        box-sizing: inherit;
-        background-repeat: no-repeat;
-        vertical-align: inherit;
-        white-space: inherit;
-        text-overflow: inherit;
-        text-shadow: inherit;
-    }
-    user agent stylesheet
-    article, aside, footer, header, hgroup, main, nav, section {
-        display: block;
-    }
-    Inherited from section#selectHeroes.u-full-width-container
-    *, :after, :before {
-        box-sizing: inherit;
-        background-repeat: no-repeat;
-        vertical-align: inherit;
-        white-space: inherit;
-        text-overflow: inherit;
-        text-shadow: inherit;
-    }
-    Inherited from body.hero-detail-page.en-us
-    @media only screen and (min-width: 400px)
-    body {
-        font-size: 1.6rem;
-        line-height: 1.5;
-    }
-    body {
-        color: #405275;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        background-color: #f0edf2;
-        max-width: 100%;
-        overflow-x: hidden;
-        font: normal normal normal 10px Arial,sans-serif;
-        font-size: 1.5rem;
-        line-height: 1.4;
-    }
-    *, :after, :before {
-        box-sizing: inherit;
-        background-repeat: no-repeat;
-        vertical-align: inherit;
-        white-space: inherit;
-        text-overflow: inherit;
-        text-shadow: inherit;
-    }
-    Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-    html {
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        box-sizing: border-box;
-        font-size: 10px;
-    }
-    html {
-        font-family: sans-serif;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-    }
-    *, :after, :before {
-        box-sizing: inherit;
-        background-repeat: no-repeat;
-        vertical-align: inherit;
-        white-space: inherit;
-        text-overflow: inherit;
-        text-shadow: inherit;
-    }
-    Pseudo ::before element
-    .row:after, .row:before {
-        content: " ";
-        display: table;
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-    }
-    *, :after, :before {
-        box-sizing: inherit;
-        background-repeat: no-repeat;
-        vertical-align: inherit;
-        white-space: inherit;
-        text-overflow: inherit;
-        text-shadow: inherit;
-    }
-    Pseudo ::after element
-    .row:after {
-        clear: both;
-    }
-    .row:after, .row:before {
-        content: " ";
-        display: table;
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-    }
-    *, :after, :before {
-        box-sizing: inherit;
-        background-repeat: no-repeat;
-        vertical-align: inherit;
-        white-space: inherit;
-        text-overflow: inherit;
-        text-shadow: inherit;
-    }
-
-
-    .hero-select-navigation .nav-title {
-        font-size: 6rem;
-        color: #fff;
-    }
-    @media only screen and (min-width: 400px)
-        .h1, h1 {
-            font-size: 8rem;
-        }
-        .h1, h1 {
-            font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-            font-size: 5.6rem;
-            line-height: normal;
-            letter-spacing: .05rem;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            margin: 0;
-            display: block;
-            text-transform: uppercase;
-            white-space: normal;
-        }
-        h1 {
-            font-size: 2em;
-            margin: .67em 0;
-        }
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-        user agent stylesheet
-        :-webkit-any(article,aside,nav,section) :-webkit-any(article,aside,nav,section) h1 {
-            font-size: 1.17em;
-            -webkit-margin-before: 1em;
-            -webkit-margin-after: 1em;
-        }
-        user agent stylesheet
-        :-webkit-any(article,aside,nav,section) h1 {
-            font-size: 1.5em;
-            -webkit-margin-before: 0.83em;
-            -webkit-margin-after: 0.83em;
-        }
-        user agent stylesheet
-        h1 {
-            display: block;
-            font-size: 2em;
-            -webkit-margin-before: 0.67em;
-            -webkit-margin-after: 0.67em;
-            -webkit-margin-start: 0px;
-            -webkit-margin-end: 0px;
-            font-weight: bold;
-        }
-        Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-        .hero-select-navigation {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            text-align: center;
-        }
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-        Inherited from section#selectHeroes.u-full-width-container
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-        Inherited from body.hero-detail-page.en-us
-        @media only screen and (min-width: 400px)
-        body {
-            font-size: 1.6rem;
-            line-height: 1.5;
-        }
-        body {
-            color: #405275;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            background-color: #f0edf2;
-            max-width: 100%;
-            overflow-x: hidden;
-            font: normal normal normal 10px Arial,sans-serif;
-            font-size: 1.5rem;
-            line-height: 1.4;
-        }
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-        Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-        html {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            box-sizing: border-box;
-            font-size: 10px;
-        }
-        html {
-            font-family: sans-serif;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-        Pseudo ::before element
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-        Pseudo ::after element
-        *, :after, :before {
-            box-sizing: inherit;
-            background-repeat: no-repeat;
-            vertical-align: inherit;
-            white-space: inherit;
-            text-overflow: inherit;
-            text-shadow: inherit;
-        }
-
-
-        @media only screen and (min-width: 768px)
-            .hero-select-navigation .hero-type-container {
-                margin-right: 18px;
-                margin-left: 18px;
-            }
-            .hero-select-navigation .hero-type-container {
-                display: inline-table;
-            }
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-            user agent stylesheet
-            div {
-                display: block;
-            }
-            Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-            .hero-select-navigation {
-                padding-top: 40px;
-                padding-bottom: 40px;
-                text-align: center;
-            }
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-            Inherited from section#selectHeroes.u-full-width-container
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-            Inherited from body.hero-detail-page.en-us
-            @media only screen and (min-width: 400px)
-            body {
-                font-size: 1.6rem;
-                line-height: 1.5;
-            }
-            body {
-                color: #405275;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                display: block;
-                background-color: #f0edf2;
-                max-width: 100%;
-                overflow-x: hidden;
-                font: normal normal normal 10px Arial,sans-serif;
-                font-size: 1.5rem;
-                line-height: 1.4;
-            }
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-            Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-            html {
-                -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: block;
-                box-sizing: border-box;
-                font-size: 10px;
-            }
-            html {
-                font-family: sans-serif;
-                -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-            }
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-            Pseudo ::before element
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-            Pseudo ::after element
-            *, :after, :before {
-                box-sizing: inherit;
-                background-repeat: no-repeat;
-                vertical-align: inherit;
-                white-space: inherit;
-                text-overflow: inherit;
-                text-shadow: inherit;
-            }
-
-            .hero-select-navigation .hero-select-title {
-                margin-top: 3rem;
-                margin-bottom: 1.6rem;
-                font-size: 3rem;
-                position: relative;
-                text-align: center;
-                width: 100%;
-                display: table;
-            }
-            @media only screen and (min-width: 400px)
-                .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                    font-size: 4.8rem;
-                }
-                .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                    font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-                    font-size: 4rem;
-                    line-height: normal;
-                    letter-spacing: .1px;
-                }
-                h1, h2, h3, h4, h5, h6 {
-                    margin: 0;
-                    display: block;
-                    text-transform: uppercase;
-                    white-space: normal;
-                }
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                user agent stylesheet
-                h3 {
-                    display: block;
-                    font-size: 1.17em;
-                    -webkit-margin-before: 1em;
-                    -webkit-margin-after: 1em;
-                    -webkit-margin-start: 0px;
-                    -webkit-margin-end: 0px;
-                    font-weight: bold;
-                }
-                Inherited from div.hero-type-container
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                .hero-select-navigation {
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-                    text-align: center;
-                }
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Inherited from section#selectHeroes.u-full-width-container
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Inherited from body.hero-detail-page.en-us
-                @media only screen and (min-width: 400px)
-                body {
-                    font-size: 1.6rem;
-                    line-height: 1.5;
-                }
-                body {
-                    color: #405275;
-                    padding: 0;
-                    margin: 0;
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    background-color: #f0edf2;
-                    max-width: 100%;
-                    overflow-x: hidden;
-                    font: normal normal normal 10px Arial,sans-serif;
-                    font-size: 1.5rem;
-                    line-height: 1.4;
-                }
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                html {
-                    -ms-text-size-adjust: 100%;
-                    -webkit-text-size-adjust: 100%;
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    box-sizing: border-box;
-                    font-size: 10px;
-                }
-                html {
-                    font-family: sans-serif;
-                    -ms-text-size-adjust: 100%;
-                    -webkit-text-size-adjust: 100%;
-                }
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Pseudo ::before element
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Pseudo ::after element
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-
-
-                .hero-select-navigation .hero-select-title .heading-line {
-                    display: table-cell;
-                    width: 50%;
-                    position: relative;
-                }
-                a, span {
-                    white-space: normal;
-                }
-                *, :after, :before {
-                    box-sizing: inherit;
-                    background-repeat: no-repeat;
-                    vertical-align: inherit;
-                    white-space: inherit;
-                    text-overflow: inherit;
-                    text-shadow: inherit;
-                }
-                Inherited from h3.hero-select-title
-                .hero-select-navigation .hero-select-title {
-                    margin-top: 3rem;
-                    margin-bottom: 1.6rem;
-                    font-size: 3rem;
-                    position: relative;
-                    text-align: center;
-                    width: 100%;
-                    display: table;
-                }
-                @media only screen and (min-width: 400px)
-                    .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                        font-size: 4.8rem;
-                    }
-                    .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                        font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-                        font-size: 4rem;
-                        line-height: normal;
-                        letter-spacing: .1px;
-                    }
-                    h1, h2, h3, h4, h5, h6 {
-                        margin: 0;
-                        display: block;
-                        text-transform: uppercase;
-                        white-space: normal;
-                    }
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    user agent stylesheet
-                    h3 {
-                        display: block;
-                        font-size: 1.17em;
-                        -webkit-margin-before: 1em;
-                        -webkit-margin-after: 1em;
-                        -webkit-margin-start: 0px;
-                        -webkit-margin-end: 0px;
-                        font-weight: bold;
-                    }
-                    Inherited from div.hero-type-container
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                    .hero-select-navigation {
-                        padding-top: 40px;
-                        padding-bottom: 40px;
-                        text-align: center;
-                    }
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    Inherited from section#selectHeroes.u-full-width-container
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    Inherited from body.hero-detail-page.en-us
-                    @media only screen and (min-width: 400px)
-                    body {
-                        font-size: 1.6rem;
-                        line-height: 1.5;
-                    }
-                    body {
-                        color: #405275;
-                        padding: 0;
-                        margin: 0;
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        background-color: #f0edf2;
-                        max-width: 100%;
-                        overflow-x: hidden;
-                        font: normal normal normal 10px Arial,sans-serif;
-                        font-size: 1.5rem;
-                        line-height: 1.4;
-                    }
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                    html {
-                        -ms-text-size-adjust: 100%;
-                        -webkit-text-size-adjust: 100%;
-                        position: relative;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        box-sizing: border-box;
-                        font-size: 10px;
-                    }
-                    html {
-                        font-family: sans-serif;
-                        -ms-text-size-adjust: 100%;
-                        -webkit-text-size-adjust: 100%;
-                    }
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    Pseudo ::before element
-                    .hero-select-navigation .hero-select-title .heading-line:before {
-                        content: "";
-                        position: absolute;
-                        top: 50%;
-                        margin-top: -1px;
-                        left: 0;
-                        width: 100%;
-                        height: 2px;
-                        opacity: .2;
-                        background: #fff;
-                    }
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-                    Pseudo ::after element
-                    *, :after, :before {
-                        box-sizing: inherit;
-                        background-repeat: no-repeat;
-                        vertical-align: inherit;
-                        white-space: inherit;
-                        text-overflow: inherit;
-                        text-shadow: inherit;
-                    }
-
-                    .hero-select-navigation .hero-select-title {
-                        margin-top: 3rem;
-                        margin-bottom: 1.6rem;
-                        font-size: 3rem;
-                        position: relative;
-                        text-align: center;
-                        width: 100%;
-                        display: table;
-                    }
-                    @media only screen and (min-width: 400px)
-                        .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                            font-size: 4.8rem;
-                        }
-                        .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                            font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-                            font-size: 4rem;
-                            line-height: normal;
-                            letter-spacing: .1px;
-                        }
-                        h1, h2, h3, h4, h5, h6 {
-                            margin: 0;
-                            display: block;
-                            text-transform: uppercase;
-                            white-space: normal;
-                        }
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        user agent stylesheet
-                        h3 {
-                            display: block;
-                            font-size: 1.17em;
-                            -webkit-margin-before: 1em;
-                            -webkit-margin-after: 1em;
-                            -webkit-margin-start: 0px;
-                            -webkit-margin-end: 0px;
-                            font-weight: bold;
-                        }
-                        Inherited from div.hero-type-container
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                        .hero-select-navigation {
-                            padding-top: 40px;
-                            padding-bottom: 40px;
-                            text-align: center;
-                        }
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Inherited from section#selectHeroes.u-full-width-container
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Inherited from body.hero-detail-page.en-us
-                        @media only screen and (min-width: 400px)
-                        body {
-                            font-size: 1.6rem;
-                            line-height: 1.5;
-                        }
-                        body {
-                            color: #405275;
-                            padding: 0;
-                            margin: 0;
-                            width: 100%;
-                            height: 100%;
-                            display: block;
-                            background-color: #f0edf2;
-                            max-width: 100%;
-                            overflow-x: hidden;
-                            font: normal normal normal 10px Arial,sans-serif;
-                            font-size: 1.5rem;
-                            line-height: 1.4;
-                        }
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                        html {
-                            -ms-text-size-adjust: 100%;
-                            -webkit-text-size-adjust: 100%;
-                            position: relative;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            display: block;
-                            box-sizing: border-box;
-                            font-size: 10px;
-                        }
-                        html {
-                            font-family: sans-serif;
-                            -ms-text-size-adjust: 100%;
-                            -webkit-text-size-adjust: 100%;
-                        }
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Pseudo ::before element
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Pseudo ::after element
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-
-                        .hero-select-navigation .hero-select-title .heading-line {
-                            display: table-cell;
-                            width: 50%;
-                            position: relative;
-                        }
-                        a, span {
-                            white-space: normal;
-                        }
-                        *, :after, :before {
-                            box-sizing: inherit;
-                            background-repeat: no-repeat;
-                            vertical-align: inherit;
-                            white-space: inherit;
-                            text-overflow: inherit;
-                            text-shadow: inherit;
-                        }
-                        Inherited from h3.hero-select-title
-                        .hero-select-navigation .hero-select-title {
-                            margin-top: 3rem;
-                            margin-bottom: 1.6rem;
-                            font-size: 3rem;
-                            position: relative;
-                            text-align: center;
-                            width: 100%;
-                            display: table;
-                        }
-                        @media only screen and (min-width: 400px)
-                            .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                                font-size: 4.8rem;
-                            }
-                            .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                                font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-                                font-size: 4rem;
-                                line-height: normal;
-                                letter-spacing: .1px;
-                            }
-                            h1, h2, h3, h4, h5, h6 {
-                                margin: 0;
-                                display: block;
-                                text-transform: uppercase;
-                                white-space: normal;
-                            }
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            user agent stylesheet
-                            h3 {
-                                display: block;
-                                font-size: 1.17em;
-                                -webkit-margin-before: 1em;
-                                -webkit-margin-after: 1em;
-                                -webkit-margin-start: 0px;
-                                -webkit-margin-end: 0px;
-                                font-weight: bold;
-                            }
-                            Inherited from div.hero-type-container
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                            .hero-select-navigation {
-                                padding-top: 40px;
-                                padding-bottom: 40px;
-                                text-align: center;
-                            }
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Inherited from section#selectHeroes.u-full-width-container
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Inherited from body.hero-detail-page.en-us
-                            @media only screen and (min-width: 400px)
-                            body {
-                                font-size: 1.6rem;
-                                line-height: 1.5;
-                            }
-                            body {
-                                color: #405275;
-                                padding: 0;
-                                margin: 0;
-                                width: 100%;
-                                height: 100%;
-                                display: block;
-                                background-color: #f0edf2;
-                                max-width: 100%;
-                                overflow-x: hidden;
-                                font: normal normal normal 10px Arial,sans-serif;
-                                font-size: 1.5rem;
-                                line-height: 1.4;
-                            }
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                            html {
-                                -ms-text-size-adjust: 100%;
-                                -webkit-text-size-adjust: 100%;
-                                position: relative;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                display: block;
-                                box-sizing: border-box;
-                                font-size: 10px;
-                            }
-                            html {
-                                font-family: sans-serif;
-                                -ms-text-size-adjust: 100%;
-                                -webkit-text-size-adjust: 100%;
-                            }
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Pseudo ::before element
-                            .hero-select-navigation .hero-select-title .heading-line:before {
-                                content: "";
-                                position: absolute;
-                                top: 50%;
-                                margin-top: -1px;
-                                left: 0;
-                                width: 100%;
-                                height: 2px;
-                                opacity: .2;
-                                background: #fff;
-                            }
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Pseudo ::after element
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-
-                            .hero-select-navigation .hero-select-title>.text {
-                                word-break: keep-all;
-                                color: #fff;
-                                opacity: .6;
-                                padding-right: 6px;
-                                display: table-cell;
-                            }
-                            a, span {
-                                white-space: normal;
-                            }
-                            *, :after, :before {
-                                box-sizing: inherit;
-                                background-repeat: no-repeat;
-                                vertical-align: inherit;
-                                white-space: inherit;
-                                text-overflow: inherit;
-                                text-shadow: inherit;
-                            }
-                            Inherited from h3.hero-select-title
-                            .hero-select-navigation .hero-select-title {
-                                margin-top: 3rem;
-                                margin-bottom: 1.6rem;
-                                font-size: 3rem;
-                                position: relative;
-                                text-align: center;
-                                width: 100%;
-                                display: table;
-                            }
-                            @media only screen and (min-width: 400px)
-                                .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                                    font-size: 4.8rem;
-                                }
-                                .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                                    font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-                                    font-size: 4rem;
-                                    line-height: normal;
-                                    letter-spacing: .1px;
-                                }
-                                h1, h2, h3, h4, h5, h6 {
-                                    margin: 0;
-                                    display: block;
-                                    text-transform: uppercase;
-                                    white-space: normal;
-                                }
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                user agent stylesheet
-                                h3 {
-                                    display: block;
-                                    font-size: 1.17em;
-                                    -webkit-margin-before: 1em;
-                                    -webkit-margin-after: 1em;
-                                    -webkit-margin-start: 0px;
-                                    -webkit-margin-end: 0px;
-                                    font-weight: bold;
-                                }
-                                Inherited from div.hero-type-container
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                                .hero-select-navigation {
-                                    padding-top: 40px;
-                                    padding-bottom: 40px;
-                                    text-align: center;
-                                }
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Inherited from section#selectHeroes.u-full-width-container
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Inherited from body.hero-detail-page.en-us
-                                @media only screen and (min-width: 400px)
-                                body {
-                                    font-size: 1.6rem;
-                                    line-height: 1.5;
-                                }
-                                body {
-                                    color: #405275;
-                                    padding: 0;
-                                    margin: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    display: block;
-                                    background-color: #f0edf2;
-                                    max-width: 100%;
-                                    overflow-x: hidden;
-                                    font: normal normal normal 10px Arial,sans-serif;
-                                    font-size: 1.5rem;
-                                    line-height: 1.4;
-                                }
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                                html {
-                                    -ms-text-size-adjust: 100%;
-                                    -webkit-text-size-adjust: 100%;
-                                    position: relative;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    display: block;
-                                    box-sizing: border-box;
-                                    font-size: 10px;
-                                }
-                                html {
-                                    font-family: sans-serif;
-                                    -ms-text-size-adjust: 100%;
-                                    -webkit-text-size-adjust: 100%;
-                                }
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Pseudo ::before element
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Pseudo ::after element
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-
-                                .hero-select-navigation .hero-select-title .heading-line {
-                                    display: table-cell;
-                                    width: 50%;
-                                    position: relative;
-                                }
-                                a, span {
-                                    white-space: normal;
-                                }
-                                *, :after, :before {
-                                    box-sizing: inherit;
-                                    background-repeat: no-repeat;
-                                    vertical-align: inherit;
-                                    white-space: inherit;
-                                    text-overflow: inherit;
-                                    text-shadow: inherit;
-                                }
-                                Inherited from h3.hero-select-title
-                                .hero-select-navigation .hero-select-title {
-                                    margin-top: 3rem;
-                                    margin-bottom: 1.6rem;
-                                    font-size: 3rem;
-                                    position: relative;
-                                    text-align: center;
-                                    width: 100%;
-                                    display: table;
-                                }
-                                @media only screen and (min-width: 400px)
-                                    .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                                        font-size: 4.8rem;
-                                    }
-                                    .h3, .progress-2>.bar-container>.bar-text>.title, h3 {
-                                        font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
-                                        font-size: 4rem;
-                                        line-height: normal;
-                                        letter-spacing: .1px;
-                                    }
-                                    h1, h2, h3, h4, h5, h6 {
-                                        margin: 0;
-                                        display: block;
-                                        text-transform: uppercase;
-                                        white-space: normal;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    user agent stylesheet
-                                    h3 {
-                                        display: block;
-                                        font-size: 1.17em;
-                                        -webkit-margin-before: 1em;
-                                        -webkit-margin-after: 1em;
-                                        -webkit-margin-start: 0px;
-                                        -webkit-margin-end: 0px;
-                                        font-weight: bold;
-                                    }
-                                    Inherited from div.hero-type-container
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                                    .hero-select-navigation {
-                                        padding-top: 40px;
-                                        padding-bottom: 40px;
-                                        text-align: center;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from section#selectHeroes.u-full-width-container
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from body.hero-detail-page.en-us
-                                    @media only screen and (min-width: 400px)
-                                    body {
-                                        font-size: 1.6rem;
-                                        line-height: 1.5;
-                                    }
-                                    body {
-                                        color: #405275;
-                                        padding: 0;
-                                        margin: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: block;
-                                        background-color: #f0edf2;
-                                        max-width: 100%;
-                                        overflow-x: hidden;
-                                        font: normal normal normal 10px Arial,sans-serif;
-                                        font-size: 1.5rem;
-                                        line-height: 1.4;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                                    html {
-                                        -ms-text-size-adjust: 100%;
-                                        -webkit-text-size-adjust: 100%;
-                                        position: relative;
-                                        top: 0;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: block;
-                                        box-sizing: border-box;
-                                        font-size: 10px;
-                                    }
-                                    html {
-                                        font-family: sans-serif;
-                                        -ms-text-size-adjust: 100%;
-                                        -webkit-text-size-adjust: 100%;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Pseudo ::before element
-                                    .hero-select-navigation .hero-select-title .heading-line:before {
-                                        content: "";
-                                        position: absolute;
-                                        top: 50%;
-                                        margin-top: -1px;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 2px;
-                                        opacity: .2;
-                                        background: #fff;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Pseudo ::after element
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-
-
-                                    .u-align-center {
-                                        text-align: center;
-                                    }
-                                    h1+h2, h1+h3, h1+h4, h1+ol, h1+ul, h2+h2, h2+h3, h2+h4, h2+ol, h2+ul, h3+h2, h3+h3, h3+h4, h3+ol, h3+ul, h4+h2, h4+h3, h4+h4, ol+p, ul+p {
-                                        margin-top: 1em;
-                                    }
-                                    ul {
-                                        list-style: none;
-                                        padding: 0;
-                                        margin: 0;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    user agent stylesheet
-                                    ul, menu, dir {
-                                        display: block;
-                                        list-style-type: disc;
-                                        -webkit-margin-before: 1em;
-                                        -webkit-margin-after: 1em;
-                                        -webkit-margin-start: 0px;
-                                        -webkit-margin-end: 0px;
-                                        -webkit-padding-start: 40px;
-                                    }
-                                    Inherited from div.hero-type-container
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                                    .hero-select-navigation {
-                                        padding-top: 40px;
-                                        padding-bottom: 40px;
-                                        text-align: center;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from section#selectHeroes.u-full-width-container
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from body.hero-detail-page.en-us
-                                    @media only screen and (min-width: 400px)
-                                    body {
-                                        font-size: 1.6rem;
-                                        line-height: 1.5;
-                                    }
-                                    body {
-                                        color: #405275;
-                                        padding: 0;
-                                        margin: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: block;
-                                        background-color: #f0edf2;
-                                        max-width: 100%;
-                                        overflow-x: hidden;
-                                        font: normal normal normal 10px Arial,sans-serif;
-                                        font-size: 1.5rem;
-                                        line-height: 1.4;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                                    html {
-                                        -ms-text-size-adjust: 100%;
-                                        -webkit-text-size-adjust: 100%;
-                                        position: relative;
-                                        top: 0;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: block;
-                                        box-sizing: border-box;
-                                        font-size: 10px;
-                                    }
-                                    html {
-                                        font-family: sans-serif;
-                                        -ms-text-size-adjust: 100%;
-                                        -webkit-text-size-adjust: 100%;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Pseudo ::before element
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Pseudo ::after element
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-
-                                    .hero-select-navigation .hero-item {
-                                        display: inline-block;
-                                        margin-bottom: 16px;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    user agent stylesheet
-                                    li {
-                                        display: list-item;
-                                        text-align: -webkit-match-parent;
-                                    }
-                                    Inherited from ul.js-hero-portrait-group.u-align-center
-                                    .u-align-center {
-                                        text-align: center;
-                                    }
-                                    ul {
-                                        list-style: none;
-                                        padding: 0;
-                                        margin: 0;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    user agent stylesheet
-                                    ul, menu, dir {
-                                        display: block;
-                                        list-style-type: disc;
-                                        -webkit-margin-before: 1em;
-                                        -webkit-margin-after: 1em;
-                                        -webkit-margin-start: 0px;
-                                        -webkit-margin-end: 0px;
-                                        -webkit-padding-start: 40px;
-                                    }
-                                    Inherited from div.hero-type-container
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from nav.hero-select-navigation.column.row.u-max-width-container
-                                    .hero-select-navigation {
-                                        padding-top: 40px;
-                                        padding-bottom: 40px;
-                                        text-align: center;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from section#selectHeroes.u-full-width-container
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from body.hero-detail-page.en-us
-                                    @media only screen and (min-width: 400px)
-                                    body {
-                                        font-size: 1.6rem;
-                                        line-height: 1.5;
-                                    }
-                                    body {
-                                        color: #405275;
-                                        padding: 0;
-                                        margin: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: block;
-                                        background-color: #f0edf2;
-                                        max-width: 100%;
-                                        overflow-x: hidden;
-                                        font: normal normal normal 10px Arial,sans-serif;
-                                        font-size: 1.5rem;
-                                        line-height: 1.4;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Inherited from html.js.csstransforms.csstransforms3d.csstransitions
-                                    html {
-                                        -ms-text-size-adjust: 100%;
-                                        -webkit-text-size-adjust: 100%;
-                                        position: relative;
-                                        top: 0;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: block;
-                                        box-sizing: border-box;
-                                        font-size: 10px;
-                                    }
-                                    html {
-                                        font-family: sans-serif;
-                                        -ms-text-size-adjust: 100%;
-                                        -webkit-text-size-adjust: 100%;
-                                    }
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Pseudo ::before element
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-                                    Pseudo ::after element
-                                    *, :after, :before {
-                                        box-sizing: inherit;
-                                        background-repeat: no-repeat;
-                                        vertical-align: inherit;
-                                        white-space: inherit;
-                                        text-overflow: inherit;
-                                        text-shadow: inherit;
-                                    }
-
-
