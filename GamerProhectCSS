@@ -105,7 +105,7 @@ body.home .heroes-section {
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-line-pack: strecth;
-    align-content: strecth;
+    align-content: stretch;
 }
 
 .u-max-width-container {
