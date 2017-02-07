@@ -1,6 +1,9 @@
+.new {
+    background-image: url('http://prikachi.com/images/903/9033903m.jpg');
+}
+
 body.home .heroes-section {
     text-align: center;
-    background-image: url('img/scene/candy-895e91cbc198218dbe56fed67b590a7c37a8bc3ef29d4b8c2989edf2196cfdb4b6150e64cb6f57a01a26268ae764b4cc22da52168121287e68aa8a9891efd616.jpg');
     background-position: top;
     background-size: cover;
 }
