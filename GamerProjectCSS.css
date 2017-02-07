@@ -320,7 +320,7 @@ body.home .hero-portrait-group {
 .hero-portrait.is-active>.hero-portrait-image-mask,.hero-portrait:active>.hero-portrait-image-mask,.hero-portrait:focus>.hero-portrait-image-mask,.hero-portrait:hover>.hero-portrait-image-mask{
      width: 84px;
      height: 100.8px;
-     margin:-6px -1px;
+     margin:-6px -4px;
     border-left-width:3px;
     border-right-width:3px;
     background-color:#f7931e
