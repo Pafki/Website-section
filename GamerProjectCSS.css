@@ -351,7 +351,7 @@ body.home .hero-portrait-group {
 }
 
 #selectHeroes {
-    background: url('https://overwatch-a.akamaihd.net/img/pages/buy/buy-bar-bg-b848f091bff6072bda7671311ce459727decd0281e85902958bc8d6b0b4d342875ad58385fa809928fd9b6bff0f7945217aed6e32581b6718a12fb99ab240f1c.jpg');
+    background: url('https://overwatch-a.akamaihd.net/img/bg-tmp-hero-mobile-0e22f0d6d0433ad18a7158c029b33abefe6bf0046188e2660dc4c28f7eaeae276793e28dd4146c7dd1fc1956e1da9ba2fda23d73e4030713f33967dc004b813a.jpg');
     background-size: cover;
     background-position: bottom;
 }
@@ -418,11 +418,6 @@ ul {
     text-align: center;
 }
 
-.hero-select-navigation {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-}
 
 .hero-select-navigation .hero-item {
     display: inline-block;
@@ -478,4 +473,34 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section-divider.m-wings:after,.section-divider.m-wings:before {
+    height:3rem;
+    background-image:url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
+}
+
+.section-divider.m-wings:after{
+    -webkit-transform:scaleY(-1);
+    -ms-transform:scaleY(-1);
+    transform:scaleY(-1)
+}
+.section-divider.m-wings-lg:after,.section-divider.m-wings-lg:before {
+    height:3rem;
+    background-image:url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
+                                                                                                                                                                                                                                                                                                                                                                  }.section-divider.m-wings-lg:after{-webkit-transform:scaleY(-1);-ms-transform:scaleY(-1);transform:scaleY(-1)}
+.section-divider.m-line:after,.section-divider.m-line:before {
+    height:.35rem;
+    border:.35rem solid hsla(0,0%,45%,.7)
+}
+.section-divider.m-inset:before {
+    top:0;bottom:auto;
+    -webkit-transform:scaleY(-1);
+    transform:scaleY(-1)
+ }
+
+.section-divider.m-inset:after {
+    bottom:0;top:auto;
+    -webkit-transform:scaleX(1);
+    transform:scaleX(1)
 }
