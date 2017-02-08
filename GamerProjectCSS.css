@@ -427,13 +427,9 @@ ul {
     font-size: 25px;
     padding-right: 6px;
     display: table-cell;
-}
-
-.text {
     font-style: italic;
     font-family:Noto Sans;
 }
-
 
 .hero-select-navigation .hero-select-title .heading-line:before {
     content: "";
