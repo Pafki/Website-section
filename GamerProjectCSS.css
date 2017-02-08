@@ -459,6 +459,10 @@ ul {
     height:3rem;
     background-image:url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
 }
+.nav-title {
+    font-size:2.8rem;
+    color:#fff
+}
 
 .section-divider.m-wings:after{
     -webkit-transform:scaleY(-1);
