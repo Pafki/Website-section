@@ -151,6 +151,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
+.pafki {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:Noto Sans;
+}
+
+
 .intro-heading-gradient-blue {
     background: -webkit-linear-gradient(top,#3f6493 10%,#345177);
     background-image: -o-linear-gradient(transparent,transparent);
@@ -163,6 +171,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 44px;
     text-transform: uppercase;
     font-style: italic;
+    text-align: center;
+    font-family:Noto Sans;
+    font-size: 45px;
 }
 
 .intro-text {
