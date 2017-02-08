@@ -467,9 +467,8 @@ ul {
     transform:scaleY(-1)
 }
 .section-divider.m-wings-lg:after,.section-divider.m-wings-lg:before {
-    height:3rem;
-    background-image:url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
-                                                                                                                                                                                                                                                                                                                                                                  }.section-divider.m-wings-lg:after{-webkit-transform:scaleY(-1);-ms-transform:scaleY(-1);transform:scaleY(-1)}
+    height: 3rem;
+}                                                                                                                                                                                                                                                                                                                                                                  }.section-divider.m-wings-lg:after{-webkit-transform:scaleY(-1);-ms-transform:scaleY(-1);transform:scaleY(-1)}
 .section-divider.m-line:after,.section-divider.m-line:before {
     height:.35rem;
     border:.35rem solid hsla(0,0%,45%,.7)
@@ -512,3 +511,21 @@ body.ko-kr .portrait-title {
     font-family:Koverwatch,sans-serif
 }
 
+.section-divider:after,.section-divider:before {
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    background-size:auto 100%;
+    background-position:top;
+    background-repeat:no-repeat;
+    z-index:10
+}
+.section-divider:before {
+    bottom:100%;
+    background-image: url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
+
+}
+.section-divider:after {
+    top:100%
+}
