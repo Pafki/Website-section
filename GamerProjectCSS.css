@@ -1,3 +1,4 @@
+
 .heroes-section {
     background-image: url('https://overwatch-a.akamaihd.net/img/scene/candy-895e91cbc198218dbe56fed67b590a7c37a8bc3ef29d4b8c2989edf2196cfdb4b6150e64cb6f57a01a26268ae764b4cc22da52168121287e68aa8a9891efd616.jpg');
 
@@ -339,17 +340,6 @@ body.home .hero-portrait-group {
     transform: skew(-25rad) translateX(-5px);
 }
 
-.hero-portrait-label {
-    position: relative;
-    display: inline-block;
-    top: -4.2px;
-    margin-left: -10px;
-    padding: 1px 10px;
-    font-size: 1.3rem;
-    color: #333;
-    white-space: nowrap;
-}
-
 #selectHeroes {
     background: url('https://overwatch-a.akamaihd.net/img/bg-tmp-hero-mobile-0e22f0d6d0433ad18a7158c029b33abefe6bf0046188e2660dc4c28f7eaeae276793e28dd4146c7dd1fc1956e1da9ba2fda23d73e4030713f33967dc004b813a.jpg');
     background-size: cover;
@@ -424,21 +414,6 @@ ul {
     margin-bottom: 16px;
 }
 
-.hero-portrait-label.m-color-inverted {
-    color: #f0edf2;
-}
-
-.hero-portrait-label {
-    position: relative;
-    display: inline-block;
-    top: -4.2px;
-    margin-left: -10px;
-    padding: 1px 10px;
-    font-size: 13px;
-    /*color: #333;*/
-    white-space: nowrap;
-}
-
 .hero-select-navigation .hero-select-title .heading-line {
     display: table-cell;
     width: 50%;
@@ -449,10 +424,15 @@ ul {
     word-break: keep-all;
     color: #fff;
     opacity: .6;
-    font-size:30px;
+    font-size: 30px;
     padding-right: 6px;
     display: table-cell;
 }
+
+.text {
+    font-weight: lighter;
+}
+
 
 .hero-select-navigation .hero-select-title .heading-line:before {
     content: "";
@@ -494,13 +474,40 @@ ul {
     border:.35rem solid hsla(0,0%,45%,.7)
 }
 .section-divider.m-inset:before {
-    top:0;bottom:auto;
+    top:0;
+    bottom:auto;
     -webkit-transform:scaleY(-1);
     transform:scaleY(-1)
  }
 
 .section-divider.m-inset:after {
-    bottom:0;top:auto;
+    bottom:0;
+    top:auto;
     -webkit-transform:scaleX(1);
     transform:scaleX(1)
 }
+
+.hero-portrait-label {
+    position:relative;
+    display:inline-block;
+    top:-4.2px;
+    margin-left:-10px;
+    padding:1px 10px;
+    font-size: 1.0rem;
+    color:#333;
+    white-space:nowrap
+}
+
+.hero-portrait-label.m-color-inverted {
+    color:#f0edf2
+}
+.hero-portrait.is-active>.hero-portrait-label,.hero-portrait:active>.hero-portrait-label,.hero-portrait:focus>.hero-portrait-label,.hero-portrait:hover>.hero-portrait-label {
+    top:-8.4px;
+    border-radius:.3rem;
+    background-color:#f0edf2;
+    color:#333
+}
+body.ko-kr .portrait-title {
+    font-family:Koverwatch,sans-serif
+}
+
