@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Big Noodle Too";
+    src: url("../fonts/bignoodle.woff");
+}
+
 
 .heroes-section {
     background-image: url('https://overwatch-a.akamaihd.net/img/scene/candy-895e91cbc198218dbe56fed67b590a7c37a8bc3ef29d4b8c2989edf2196cfdb4b6150e64cb6f57a01a26268ae764b4cc22da52168121287e68aa8a9891efd616.jpg');
@@ -111,13 +116,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
+
 .content-box {
-    padding-top: 72px;
-    padding-bottom: 72px;
-}
-.content-box {
-    padding-top: 44px;
-    padding-bottom: 44px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .column.row.row, .row.row.columns {
@@ -248,7 +250,6 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     -ms-flex-item-align: auto;
-    -ms-grid-row-align: auto;
     align-self: auto;
 }
 
@@ -256,6 +257,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #f0edf2;
     padding-left: 64%;
     text-align: center;
+    font-size:16px;
+    font-family: Arial, sans-serif;
+}
+
+.spotlight-header{
+    font-size:72px;
+    font-family: "Big Noodle Too", impact, sans-serif;
 }
 
 .u-invert {
@@ -309,6 +317,7 @@ body.home .hero-portrait-group {
 .hero-portrait {
     display: inline-block;
     text-align: center;
+    line-height:24px;
 }
 
 
@@ -316,8 +325,8 @@ body.home .hero-portrait-group {
     display:block;
     position:relative;
     width:70px;
-    height:84px;
-    margin:2.4px 6px;
+    height:78px;
+    margin:2px 6px;
     border:3px solid #f0edf2;
     border-left-width:0;
     border-right-width:0;
@@ -329,15 +338,17 @@ body.home .hero-portrait-group {
     -ms-transform:skew(25rad);
     transform:skew(25rad)
 }
-.hero-portrait.is-active>.hero-portrait-image-mask,.hero-portrait:active>.hero-portrait-image-mask,.hero-portrait:focus>.hero-portrait-image-mask,.hero-portrait:hover>.hero-portrait-image-mask{
-     width: 84px;
-     height: 100.8px;
-     margin:-6px -4px;
+.hero-portrait.is-active>.hero-portrait-image-mask,
+.hero-portrait:active>.hero-portrait-image-mask,
+.hero-portrait:focus>.hero-portrait-image-mask,
+.hero-portrait:hover>.hero-portrait-image-mask{
+    width: 78px;
+    height: 94px;
+    margin:-6px -1px;
     border-left-width:3px;
     border-right-width:3px;
     background-color:#f7931e
 }
-
 
 .hero-portrait-image {
     display: inline-block;
@@ -352,16 +363,17 @@ body.home .hero-portrait-group {
 }
 
 #selectHeroes {
-    background: url('https://overwatch-a.akamaihd.net/img/bg-tmp-hero-mobile-0e22f0d6d0433ad18a7158c029b33abefe6bf0046188e2660dc4c28f7eaeae276793e28dd4146c7dd1fc1956e1da9ba2fda23d73e4030713f33967dc004b813a.jpg');
+    background: url('https://overwatch-a.akamaihd.net/img/pages/buy/buy-bar-bg-b848f091bff6072bda7671311ce459727decd0281e85902958bc8d6b0b4d342875ad58385fa809928fd9b6bff0f7945217aed6e32581b6718a12fb99ab240f1c.jpg');
     background-size: cover;
     background-position: bottom;
+    border-bottom: 7px solid hsla(0,0%,45%,.7) !important;
 }
 .u-full-width-container {
     display: block;
     width: 100%;
     max-width: 100%;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
 }
 *, :after, :before {
@@ -373,11 +385,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-shadow: inherit;
 }
 
-article, aside, footer, header, hgroup, main, nav, section {
+article, aside, footer, header, main, nav, section {
     display: block;
 }
 
-/*MENU*/
 .hero-select-navigation .hero-type-container {
     display: inline-table;
 }
@@ -404,8 +415,8 @@ ul {
 }
 
 .hero-select-navigation .hero-select-title {
-    margin-top: 3rem;
-    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
     position: relative;
     text-align: center;
@@ -435,11 +446,11 @@ ul {
     word-break: keep-all;
     color: #fff;
     opacity: .6;
-    font-size: 25px;
+    font-size: 30px;
     padding-right: 6px;
     display: table-cell;
-    font-style: italic;
-    font-family:Noto Sans;
+    font-weight: 100;
+    font-family: "Big Noodle Too", impact, sans-serif;
 }
 
 .hero-select-navigation .hero-select-title .heading-line:before {
@@ -461,41 +472,14 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    max-height: 420px;
 }
 
-.section-divider.m-wings:after,.section-divider.m-wings:before {
-    height:3rem;
-    background-image:url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
-}
 .nav-title {
-    font-size: 2.8rem;
+    font-size: 60px;
     color: #fff;
-}
-
-.section-divider.m-wings:after{
-    -webkit-transform:scaleY(-1);
-    -ms-transform:scaleY(-1);
-    transform:scaleY(-1)
-}
-.section-divider.m-wings-lg:after,.section-divider.m-wings-lg:before {
-    height: 3rem;
-}                                                                                                                                                                                                                                                                                                                                                                  }.section-divider.m-wings-lg:after{-webkit-transform:scaleY(-1);-ms-transform:scaleY(-1);transform:scaleY(-1)}
-.section-divider.m-line:after,.section-divider.m-line:before {
-    height:.35rem;
-    border:.35rem solid hsla(0,0%,45%,.7)
-}
-.section-divider.m-inset:before {
-    top:0;
-    bottom:auto;
-    -webkit-transform:scaleY(-1);
-    transform:scaleY(-1)
- }
-
-.section-divider.m-inset:after {
-    bottom:0;
-    top:auto;
-    -webkit-transform:scaleX(1);
-    transform:scaleX(1)
+    font-weight: 100;
+    font-family: "Big Noodle Too", impact, sans-serif;
 }
 
 .hero-portrait-label {
@@ -504,40 +488,41 @@ ul {
     top:-4.2px;
     margin-left:-10px;
     padding:1px 10px;
-    font-size: 1.0rem;
     color:#333;
-    white-space:nowrap
+    white-space:nowrap;
+    font-family:Arial, sans-serif;
+    font-size:13px;
 }
 
 .hero-portrait-label.m-color-inverted {
     color:#f0edf2
 }
-.hero-portrait.is-active>.hero-portrait-label,.hero-portrait:active>.hero-portrait-label,.hero-portrait:focus>.hero-portrait-label,.hero-portrait:hover>.hero-portrait-label {
-    top:-8.4px;
-    border-radius:.3rem;
+.hero-portrait.is-active>.hero-portrait-label,
+.hero-portrait:active>.hero-portrait-label,
+.hero-portrait:focus>.hero-portrait-label,
+.hero-portrait:hover>.hero-portrait-label {
+    top:-12.4px;
+    border-radius:3px;
     background-color:#f0edf2;
-    color:#333
+    color:#333;
+    line-height: 19px;
 }
 body.ko-kr .portrait-title {
     font-family:Koverwatch,sans-serif
 }
 
-.section-divider:after,.section-divider:before {
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    background-size:auto 100%;
-    background-position:top;
-    background-repeat:no-repeat;
-    z-index:10;
-    background-image: url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png')
+#selectHeroes:before {
+    transform: scaleY(-1);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: auto 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 10;
+    height: 2rem;
+    width:100%;
+    background-image: url('https://overwatch-a.akamaihd.net/img/dividers/wing-69271c3c90421d431edebbba7d0f0ce9f75861ea2f2a7855af93dff7b79235c18a0c42674d2b11239e41ed9d290066dd96a4a8e0d53b8472c464fc0590140f7b.png');
+}
 
-}
-.section-divider:before {
-    bottom:100%;
-
-}
-.section-divider:after {
-    top:100%
-}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>The world need more heroes!</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans:400,300,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="GamerProjectCSS.css">
+    <link rel="stylesheet" href="media/css/GamerProjectCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <section class="heroes-section content-box">
@@ -21,12 +22,14 @@
                     <div class="u-max-width-container flex-item">
                         <h2 data-js="spotlight-header" class="spotlight-header u-invert u-text-shadow"></h2>
                         <p data-js="spotlight-caption" class="spotlight-caption">
-                        </p></div></div><div class="u-max-width-container">
-                <div data-js="spotlight-image" class="spotlight-image"></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="u-max-width-container">
+                    <div data-js="spotlight-image" class="spotlight-image"></div>
             </div>
             </div>
         </div>
-        <section class="section-divider m-wings-lg m-inset m-bottom-only"></section>
         <section id="selectHeroes" class="u-full-width-container">
             <nav class="hero-select-navigation column row u-max-width-container">
                 <h1 class="nav-title">Select a Hero</h1>
@@ -37,7 +40,7 @@
                         <span class="heading-line"></span>
                     </h3><ul class="js-hero-portrait-group u-align-center">
                     <li class="hero-item">
-                        <a href="/en-us/heroes/genji/" data-hero-id="genji" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                        <a href="/en-us/heroes/genji/" data-hero-id="genji" data-spotlight-caption="A cyborg ninja and deadly warrior who has found peace with his mechanical body." data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                             <div class="hero-portrait-image-mask">
                                 <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/genji/icon-portrait.png')" class="hero-portrait-image"></div>
                             </div>
@@ -45,7 +48,7 @@
                         </a>
                     </li>
                     <li class="hero-item">
-                        <a href="/en-us/heroes/mccree/" data-hero-id="mccree" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                        <a href="/en-us/heroes/mccree/" data-hero-id="mccree" data-spotlight-caption="An outlaw gunslinger who doles out justice on his own terms." data-analytics-placement="Hero Page" class="hero-portrait">
                             <div class="hero-portrait-image-mask">
                                 <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/mccree/icon-portrait.png')" class="hero-portrait-image"></div>
                             </div>
@@ -53,13 +56,13 @@
                         </a>
                     </li>
                     <li class="hero-item">
-                        <a href="/en-us/heroes/pharah/" data-hero-id="pharah" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                        <a href="/en-us/heroes/pharah/" data-spotlight-caption="A decorated soldier who patrols the skies in her experimental Raptora combat suit." data-hero-id="pharah" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                             <div class="hero-portrait-image-mask">
                                 <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/pharah/icon-portrait.png')" class="hero-portrait-image"></div>
                             </div>
                             <span class="hero-portrait-label m-color-inverted">Pharah</span>
                         </a></li><li class="hero-item">
-                    <a href="/en-us/heroes/reaper/" data-hero-id="reaper" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                    <a href="/en-us/heroes/reaper/" data-spotlight-caption="A mercenary and ruthless killer who hunts the former agents of Overwatch." data-hero-id="reaper" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                         <div class="hero-portrait-image-mask">
                             <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/reaper/icon-portrait.png')" class="hero-portrait-image"></div>
                         </div>
@@ -67,7 +70,7 @@
                     </a>
                 </li>
                     <li class="hero-item">
-                        <a href="/en-us/heroes/soldier-76/" data-hero-id="soldier-76" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                        <a href="/en-us/heroes/soldier-76/" data-spotlight-caption="A vigilante who will stop at nothing to bring the enemies of Overwatch to justice." data-hero-id="soldier-76" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                             <div class="hero-portrait-image-mask">
                                 <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/soldier-76/icon-portrait.png')" class="hero-portrait-image"></div>
                             </div>
@@ -75,7 +78,7 @@
                         </a>
                     </li>
                     <li class="hero-item">
-                        <a href="/en-us/heroes/sombra/" data-hero-id="sombra" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                        <a href="/en-us/heroes/sombra/" data-spotlight-caption="A notorious hacker, on the hunt for secrets—and the power they bring." data-hero-id="sombra" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                             <div class="hero-portrait-image-mask">
                                 <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/sombra/icon-portrait.png')" class="hero-portrait-image"></div>
                             </div>
@@ -83,7 +86,7 @@
                         </a>
                     </li>
                     <li class="hero-item">
-                        <a href="/en-us/heroes/tracer/" data-hero-id="tracer" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                        <a href="/en-us/heroes/tracer/" data-spotlight-caption="A former Overwatch agent, time-jumping adventurer, and irrepressible force for good." data-hero-id="tracer" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                             <div class="hero-portrait-image-mask">
                                 <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/tracer/icon-portrait.png')" class="hero-portrait-image"></div>
                             </div>
@@ -100,7 +103,7 @@
                     </h3>
                     <ul class="js-hero-portrait-group u-align-center">
                         <li class="hero-item">
-                            <a href="/en-us/heroes/bastion/" data-hero-id="bastion" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/bastion/" data-spotlight-caption="A transforming robot who explores the world; fascinated by nature, but wary of humanity." data-hero-id="bastion" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/bastion/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -108,7 +111,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/hanzo/" data-hero-id="hanzo" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/hanzo/" data-spotlight-caption="A lethal bowman and assassin without peer." data-hero-id="hanzo" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/hanzo/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -116,7 +119,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/junkrat/" data-hero-id="junkrat" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/junkrat/"  data-spotlight-caption="An explosives-obsessed freak who lives to cause chaos and destruction."  data-hero-id="junkrat" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/junkrat/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -124,7 +127,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/mei/" data-hero-id="mei" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/mei/" data-spotlight-caption="A specialist in weather manipulation who has taken up the fight to preserve the environment." data-hero-id="mei" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/mei/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -132,7 +135,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/torbjorn/" data-hero-id="torbjorn" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/torbjorn/" data-spotlight-caption="An ingenious engineer who forges weapons systems on the battlefield." data-hero-id="torbjorn" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/torbjorn/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -140,7 +143,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/widowmaker/" data-hero-id="widowmaker" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/widowmaker/" data-spotlight-caption="A perfect assassin: patient, ruthlessly efficient, and without emotion or remorse." data-hero-id="widowmaker" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/widowmaker/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -157,7 +160,7 @@
                     </h3>
                     <ul class="js-hero-portrait-group u-align-center">
                         <li class="hero-item">
-                            <a href="/en-us/heroes/dva/" data-hero-id="dva" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/dva/" data-spotlight-caption="A former pro gamer who now pilots a state-of-the-art mech in defense of her homeland."  data-hero-id="dva" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/dva/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -165,7 +168,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/reinhardt/" data-hero-id="reinhardt" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/reinhardt/" data-spotlight-caption="A champion of a bygone age, who lives by the knightly codes of valor, justice, and courage." data-hero-id="reinhardt" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/reinhardt/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -173,7 +176,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/roadhog/" data-hero-id="roadhog" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/roadhog/" data-hero-id="roadhog" data-spotlight-caption="A ruthless killer with tremendous strength and a reputation for cruelty and wanton destruction." data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/roadhog/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -181,7 +184,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/winston/" data-hero-id="winston" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/winston/" data-spotlight-caption="A super-intelligent, genetically engineered gorilla, scientist, and champion for humanity's potential." data-hero-id="winston" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/winston/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -189,7 +192,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/zarya/" data-hero-id="zarya" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/zarya/" data-spotlight-caption="One of the world's strongest women, who sacrificed personal glory to protect her country."  data-hero-id="zarya" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/zarya/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -206,7 +209,7 @@
                     </h3>
                     <ul class="js-hero-portrait-group u-align-center">
                         <li class="hero-item">
-                            <a href="/en-us/heroes/ana/" data-hero-id="ana" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/ana/" data-spotlight-caption="This Overwatch stalwart has emerged from years of seclusion to defend a new generation." data-hero-id="ana" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/ana/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -214,7 +217,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/lucio/" data-hero-id="lucio" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/lucio/" data-spotlight-caption="An international celebrity who fights for social change through his music and actions." data-hero-id="lucio" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/lucio/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -222,7 +225,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/mercy/" data-hero-id="mercy" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/mercy/" data-spotlight-caption="A guardian angel, peerless healer, brilliant medical researcher, and staunch advocate for peace." data-hero-id="mercy" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/mercy/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -230,7 +233,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/symmetra/" data-hero-id="symmetra" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/symmetra/" data-spotlight-caption="An architech who manipulates hard-light constructs to build her perfect, ordered world." data-hero-id="symmetra" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/symmetra/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -238,7 +241,7 @@
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="/en-us/heroes/zenyatta/" data-hero-id="zenyatta" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
+                            <a href="/en-us/heroes/zenyatta/" data-spotlight-caption="An omnic monk who wanders the world in search of spiritual enlightenment." data-hero-id="zenyatta" data-analytics="hero-selection" data-analytics-placement="Hero Page" class="hero-portrait">
                                 <div class="hero-portrait-image-mask">
                                     <div style="background-image:url('https://blzgdapipro-a.akamaihd.net/hero/zenyatta/icon-portrait.png')" class="hero-portrait-image"></div>
                                 </div>
@@ -251,5 +254,21 @@
         </section>
     </div>
 </section>
+<script>
+    $('a.hero-portrait').hover(function(){
+        var self = $(this);
+        var hero = self.attr('data-hero-id');
+        var spotlight = $('div.spotlight-image');
+        var spotlightHeader = $('h2.spotlight-header');
+        var spotlightCaption = $('p.spotlight-caption');
+
+        $('.is-active').removeClass('is-active');
+        self.addClass('is-active');
+
+        spotlightHeader.text(self.find('.hero-portrait-label').text());
+        spotlightCaption.text(self.attr('data-spotlight-caption'));
+        spotlight.css('background-image', "url('https://blzgdapipro-a.akamaihd.net/hero/"+hero+"/full-portrait.png')");
+    });
+</script>
 </body>
 </html>
